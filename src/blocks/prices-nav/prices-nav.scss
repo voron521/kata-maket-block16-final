@@ -1,0 +1,237 @@
+$bgColorH11: #F8F8F8;
+$bgColorH12: #FFFFFF;
+$bgColorButton: #FF3E79;
+$borderColorMenu: #EAEAEA;
+
+$textH2Color: #7E7E82;
+$borderRadiusCOlor: #EAEAEA;
+
+.prices-nav{
+  background-color: $bgColorH11;
+}
+
+.prices-nav__h1{
+  color: #7E7E82;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: linear-gradient(to right, $bgColorH11, $bgColorH12);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+
+}
+
+.price-nav__bottom-wrapper{
+  padding: 0 2vw;
+  background-color: $bgColorH12;
+  border: 1px solid $bgColorH11;
+  border-radius: 10px;
+  
+}
+.prices-nav-head__wrapper{
+  padding: 0 2vw;
+  
+}
+.prices-nav-bottom__wrapper{
+  
+  padding: 2vw;
+}
+
+
+
+
+.prices-nav__hidden-wrapper--visible{
+  display: none;
+}
+.swiper3 .swiper-slide{
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  border: 1px solid $borderRadiusCOlor;
+  border-radius: 5px;
+  
+  margin: 16px;
+  background-color: $bgColorH12;
+  justify-content: space-around;
+  
+  
+  
+  
+  
+}
+
+.swiper3 .swiper-wrapper{
+  height: 200px;
+  margin-left: 16px;
+
+}
+
+
+
+.prices-nav__h2{
+  font-size: 14px;
+  color: $textH2Color;
+  line-height: 0;
+  margin-left: 16px;
+  display: block;
+  
+}
+
+.prices-nav__p{
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 14px;
+  margin-left: 16px;
+}
+
+.prices-nav__link-repair-services, .prices-nav__link-price, .prices-nav__link-term {
+
+  text-decoration: none;
+  
+}
+.prices-nav__button-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+
+
+.prices-nav__button, .prices-nav__button-swiper{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  background-color: $bgColorButton;
+  border: 0;
+ 
+  width: 119px;
+  height: 32px;
+}
+
+.prices-nav__button-swiper{
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 120px;
+ 
+
+}
+.prices-nav__list-nav{
+  margin: 0;
+  padding: 0;
+  width: 96%;
+}
+
+
+.prices-nav__list-item .prices-nav__button-span::before{
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  border-right: 8px solid $bgColorH12;
+  border-top: 8px solid $bgColorH12;
+  transform: rotate(45deg) scale(0.25);
+  margin-left: 70px;
+  margin-top: -4px;
+ 
+}
+
+.prices-nav__button-swiper-span::before{
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  border-right: 8px solid $bgColorH12;
+  border-top: 8px solid $bgColorH12;
+  transform: rotate(45deg) scale(0.25);
+  margin-left: 80px;
+  margin-top: -8px;
+}
+
+
+
+.prices-nav__button-span, .prices-nav__button-swiper-span{
+  color: $bgColorH12;
+  font-size: 12px;
+  margin-left: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+
+
+.prices-nav__link-repair-services:first-child{
+  margin-top: 16px;
+}
+
+.prices-nav__list-item{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+.prices-nav__list-item--border{
+  border-bottom: 1px solid $borderColorMenu;
+}
+
+.prices-nav-head__wrapper .prices-nav__templ-parag{
+  color: $textH2Color;
+}
+
+.prices-nav__templ-parag{
+  font-size: 14px;
+  margin: 20px 0;
+  font-weight: 700;
+  
+}
+
+.prices-nav__templ-parag:nth-child(1){
+  
+  
+  
+  width: 46.7%;
+}
+.prices-nav__templ-parag:nth-child(2){
+
+  
+  width: 11.7%;
+  
+}
+
+.prices-nav__templ-parag:nth-child(3){
+
+  
+  width: 12.7%;
+  
+}
+.prices-nav__templ-parag:nth-child(4), .prices-nav__button-wrapper{
+  
+  
+  width: 19.2%;
+  margin-right: 16px;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .prices-nav__hidden-wrapper--visible{
+    display: flex;
+    
+    width: 100%;
+    justify-content: center;
+  }
+  .swiper-container3--visible{
+    display: none;
+  }
+
+
+
+}

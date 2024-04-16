@@ -1,0 +1,185 @@
+$bgColor: #FFFFFF;
+$shadowColor: #0E185033;
+$bgColorWrapper: rgba(255,255,255,0.9);
+$borderColorInput: #EAEAEA;
+$TextColorInput: #B5B6BC;
+
+.modal-window{
+  display: none;
+  position: fixed;
+  right: 0;
+  z-index: 5;
+
+  width: 100%;
+  height: 100%;
+  background-color:  $bgColorWrapper;
+  
+
+}
+.modal-window__input--visible-flex{
+  display: flex;
+}
+.modal-window__input--visible-none{
+  display: none;
+}
+
+
+.modal-window--visible{
+  display: flex;
+  
+}
+
+
+.modal-window__call{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position:  fixed;
+  right: 0;
+  background-color:  $bgColor;
+  height: 100%;
+  width: 30.56%;
+  animation: menuAnimationModal 1s forwards;
+  
+  box-shadow: 10px -3px 50px 8px $shadowColor;
+
+}
+
+.modal-window__call--unvisible{
+  
+  
+  animation: menuAnimationModalReverse 1s forwards;
+  
+}
+
+.modal-window__h1-wrapper{
+  display: flex;
+}
+.modal-window__button{
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  border-radius: 15px;
+  background-color: $bgColorButton;
+  border: 0;
+  
+  width: 119px;
+  height: 32px;
+  margin-right: 5%;
+
+
+  
+}
+
+.modal-window__divider-img{
+  width: 4px;
+  height: 40px;
+  transform: translate(0, -3px);
+  
+}
+
+.modal-window__h1{
+  font-weight: 900;
+  margin-left: 3.75%;
+  
+  
+  
+}
+
+.modal-window__button-span{
+  margin-left: 10px;
+  color: $bgColor;
+}
+
+.modal-window__button-span::before{
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  border-right: 8px solid $bgColorH12;
+  border-top: 8px solid $bgColorH12;
+  transform: rotate(45deg) scale(0.25);
+  margin-left: 70px;
+  margin-top: -3px;
+ 
+}
+
+.modal-window__button-close{
+  border: none;
+  outline: none;
+  background: transparent;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 24px 0 40px 16px;
+
+}
+
+.modal-window__label{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  
+}
+
+.modal-window__input-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  
+  
+}
+
+.modal-window__input{
+  width: 100%;
+  margin-bottom: 16px;
+  height: 48px;
+  border: 1px solid $borderColorInput;
+  border-radius: 5px;
+  padding-left: 16px;
+}
+
+.modal-window__input::placeholder{
+  color: $TextColorInput;
+  
+
+}
+.modal-window__input-message{
+  height: 118px;
+}
+
+
+@keyframes menuAnimationModal {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes menuAnimationModalReverse {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+
+
+
+
+
+
+@media (max-width: 360px) {
+  .modal-window__call{
+
+    height: 100%;
+    width: 100%;
+  }
+}

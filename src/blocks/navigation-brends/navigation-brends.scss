@@ -1,0 +1,157 @@
+$bgColorH11: #F8F8F8;
+$bgColorH12: #FFFFFF;
+
+.navigation-brends {
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    
+    background-color: $bgColorH11;
+  }
+  
+.swiper1 .swiper-wrapper {
+  display: flex;
+  margin: 16px;
+  
+}
+
+.swiper1 .swiper-slide {
+  height: 72px;
+  width: 240px;
+  
+}
+
+.navigation-brends__link {
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-brends__link::after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border: 2px solid #FF3E79;
+  border-radius: 50%;
+  margin-left: 170px;
+}
+
+.navigation-brends__link::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-right: 8px solid #FF3E79;
+  border-top: 8px solid #FF3E79;
+  transform: rotate(45deg) scale(0.25);
+  margin-left: 168px;
+  
+}
+
+.navigation-brends__img {
+  margin-left: 16px;
+}
+
+
+.navigation-brends__h1{
+  color: #7E7E82;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: linear-gradient(to right, $bgColorH11, $bgColorH12);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  
+
+}
+
+.navigation-brends__button{
+  display: flex;
+  border: none;
+  outline: none;
+  align-self: flex-start;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1B1C21;
+  background: transparent;
+  margin: 0 0 16px 31px;
+  padding: 4px;
+  line-height: 24px;
+}
+
+
+.navigation-brends__img-button{
+  height: 11px;
+  width: 8px;
+  margin-right: 8px; 
+  transition: transform 500ms;
+  transform: rotate(0deg);
+}
+
+
+.navigation-brends__list-nav{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  
+  
+
+}
+
+.navigation-brends__list-item{
+  margin-bottom: 16px;
+}
+
+.navigation-brends__hidden-wrapper .navigation-brends__list-item{
+  position: relative;
+  
+  list-style-type: none;
+  width: 226px;
+  height: 74px;
+  margin-left: 24px;
+
+}
+  
+  
+.navigation-brends__hidden-wrapper{
+  transition: all 500ms;
+  max-height: 190px;
+  overflow: hidden;
+  
+}
+.navigation-brends__hidden-wrapper--change-height{
+  
+  max-height: 500px;
+}
+
+.navigation-brends__img-button--rotate-img{
+  transform: rotate(180deg);
+}
+
+.navigation-brends__hidden-wrapper--visible, .navigation-brends__button--visible{
+  display: none;
+}
+@media (min-width: 768px) {
+  .swiper-container1--visible{
+    display: none;
+  }
+  .navigation-brends__hidden-wrapper--visible{
+    display: flex;
+  }
+  .navigation-brends__button--visible{
+    display: flex;
+  }
+}

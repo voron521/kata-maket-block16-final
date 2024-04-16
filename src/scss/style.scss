@@ -1,0 +1,84 @@
+@import './src/blocks/navigation-brends/navigation-brends.scss';
+@import './src/blocks/header/header.scss';
+@import './src/blocks/main-info/main-info.scss';
+@import './src/blocks/equipment-repair/equipment-repair.scss';
+@import './src/blocks/commercial-information/commercial-information.scss';
+@import './src/blocks/prices-nav/prices-nav.scss';
+@import './src/blocks/footer-content/footer-content.scss';
+@import './src/blocks/modal-window/modal-window.scss';
+
+
+
+@import './src/blocks/header-burger-menu/header-burger-menu.scss';
+@import '~swiper/swiper-bundle.min.css';
+
+
+
+
+
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakesCondensed-Light.ttf') format('truetype');
+  font-weight: 200;
+  font-style: ormal;
+}
+
+$bgColor: #F8F8F8;
+$txtColor: #1B1C21;
+
+
+html {
+  box-sizing: border-box;
+  background-color: #F8F8F8;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'TT Lakes', sans-serif;
+  color: $txtColor;
+  font-weight: 800;
+}
+
+h1{
+  margin: 0;
+  
+}
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+  
+  padding: 0;
+  margin: 0;
+  font-family: TT Lakes, sans-serif;
+  
+  
+  
+  
+  
+}
+
+
+@media (min-width: 1426px) {
+
+  .body-content{
+    width: 1440px;
+    margin: auto;
+  }
+
+  .main-content, .footer-content{
+    /*background-color: yellow;*/
+    position: relative;
+    left: 306px;
+    width: 1120px;
+    
+    
+  }
+
+
+
+}
+
+
+

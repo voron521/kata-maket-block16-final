@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    
+  </head>
+  <body class = "body-content">
+    <header class="header">
+
+       <!--   Создаем меню по нажатию на бургер(элемент копируются через js из шпаки сайта)          --> 
+      <div class="header-burger-menu-wrapper">
+        <nav class="header-burger-menu">
+          
+        </nav>
+      </div>
+
+      <!--   Создаем модальные окна по нажатию на позвонить и отправить соообщение   --> 
+      <div class="modal-window">
+        <nav class="modal-window__call">
+          
+          <button type="button" class = "modal-window__button-close">
+            <img src="/src/img/header/left-header/close.svg" alt="меню лого" class="modal-window__close-img">
+          </button>
+          
+          <div class="modal-window__h1-wrapper">
+            <img src="img/main/highlight.svg" alt="" class="modal-window__divider-img">
+            <h1 class="modal-window__h1">Обратная связь</h1>
+          </div>
+          
+          <form action="" class = "modal-window__input-form">
+            
+            
+            <label for="modal-window_label" leng-choice = "RU" class = "modal-window__label">
+
+              <input class ="modal-window__input modal-window__input--visible-flex" type="text" placeholder="Имя"> 
+              <input class ="modal-window__input" type="text" placeholder="Телефон">
+              <input class ="modal-window__input modal-window__input--visible-flex" type="text" placeholder="Электронная почта"> 
+              <input class ="modal-window__input modal-window__input-message modal-window__input--visible-flex " type="text" placeholder="Собщение">
+
+              <p class = "modal-window__label-p">Нажимая “отправить”,
+                 вы даете согласие на обработку персональных данных
+                  и соглашаетесь с нашей политикой конфиденциальности
+              </p>    
+
+            </label>
+            <button type="button" class = "modal-window__button">
+              <span class = "modal-window__button-span">Отправить</span>
+            </button>
+            
+            
+
+        </form>
+
+
+      </div>
+      
+
+
+      <div class ="header-wrapper">
+        <div class ="h1-block h1-block--visible">
+            <img src="img/main/highlight.svg" alt="" class="main-info__dash-picture"></img>
+            <h1 class = "main-info__h1">Услуги и сервисы</h1>
+        </div>
+        <nav class ="header-wrapper__item left-header header-wrapper__item--visible">
+            
+            <button type="button" class = "header-wrapper__button-burger header-wrapper__button-burger--visible header-wrapper__button-burger--change-place"><img src="img/header/left-header/burger.svg" alt="меню лого" class="left-header__burger-img"></button>
+            <a class = "left-header__link-logo" href=""><img src="img/header/left-header/logo.svg" alt="лого" class="left-header__logo-img"></a>
+            <a class = "left-header__link-search left-header__link-search--visible" href=""><img src="./img/header/left-header/search.svg" alt="поиск" class="left-header__search-img left-header__search-img--margin"></a>
+            <img src="img/header/left-header/divider.svg" alt="" class="left-header__divider-img left-header__divider-img--change-place left-header__divider-img--visible">
+        </nav>
+
+        <nav class = "header-wrapper__nav-verical header-wrapper__nav-verical--change-height header-wrapper__nav-verical--visible">
+          <ul class = "header-wrapper__list-nav-vartical header-wrappero__list-nav--margin">
+              <li class = "header-wrapper__verical-list-item"><a class = "header-wrapper__vertical-link" href="#repair">Ремонт техники</a></li>
+              <li class = "header-wrapper__verical-list-item"><a class = "header-wrapper__vertical-link" href="#services">Услуги и сервисы</a></li>
+              <li class = "header-wrapper__verical-list-item"><a class = "header-wrapper__vertical-link" href="#clients">Корпоративным клиентам</a></li>
+              <li class = "header-wrapper__verical-list-item"><a class = "header-wrapper__vertical-link" href="#sellers">Продавцам техники</a></li>
+              <li class = "header-wrapper__verical-list-item"><a class = "header-wrapper__vertical-link" href="#partners">Партнерам</a></li>
+              <li class = "header-wrapper__verical-list-item"><a class = "header-wrapper__vertical-link" href="#manufacturers">Производителям</a></li>
+              <li class = "header-wrapper__verical-list-item"><a class = "header-wrapper__vertical-link" href="#service-centers">Наши сервисные центры</a></li>
+              <li class = "header-wrapper__verical-list-item"><a class = "header-wrapper__vertical-link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+
+        <nav class ="header-wrapper__item right-header">
+            <ul class = "header-wrapper__popup-list header-wrapper__popup-list--visible">
+                <li class = "header-wrapper__popup-item">
+                    <button class = "header-wrapper__call-button header-wrapper__call-button--visible">
+                    <img src="img/header/new_element_in_header/call.svg" alt="позвонить" class="right-header__call-img">
+                    </button>
+                </li>
+                <li class = "header-wrapper__popup-item">
+                  <button class = "header-wrapper__message-button header-wrapper__message-button--visible">
+                    <img src="img/header/new_element_in_header/message.svg" alt="сообщение" class="right-header__message-img">
+               
+                  </button>
+                </li>
+                <li class = "header-wrapper__popup-item"><a class = "right-header__link-contact" href=""><img src="img/header/new_element_in_header/contact.svg" alt="контакты" class="right-header__call-img"></a> </li>
+                <img src="img/header/left-header/divider.svg" alt="" class="right-header__divider-img right-header__divider-img--visible">
+            </ul>
+            <ul class = "header-wrapper__stable-list header-wrapper__stable-list--visible">
+                <li class ="header-wrapper__stable-item"><a class = "right-header__link-repair" href=""><p class="header-wrapper__item-p header-wrapper__item-p--visible">оставить заявку</p><img src="img/header/right-header/repair.svg" alt="ремонт" class="right-header__repair-img"></a></li>
+                <li class ="header-wrapper__stable-item"><a class = "right-header__link-checkstatus" href=""><p class="header-wrapper__item-p header-wrapper__item-p--visible">статус ремонта</p><img src="img/header/right-header/checkstatus.svg" alt="проверь состояние" class="right-header__checkstatus-img"></a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+        <div class ="header-wrapper__bottom header-wrapper-bottom--margin">
+          <a href="#" class ="header-wrapper__mail-bottom">mail@cps.com</a>
+          <p class = "header-wrapper__phone-number">8 800 890 8900</p>
+  
+          <form action="" class = "header-wrapper__check-form">
+              <input class ="header-wrapper__check-input" type="radio" id ="check_inp_ru" name="language">
+              
+              <label for="check_inp_ru" leng-choice = "RU" class = "header-wrapper__label">                  
+                  RU
+              </label>
+              
+              <input class ="header-wrapper__check-input" type="radio" id ="check_inp_en" name="language">
+              <label for="check_inp_en" leng-choice = "EN" class = "header-wrapper__label">
+                  EN
+              </label>
+              
+              <input class ="header-wrapper__check-input" type="radio" id ="check_inp_ch" name="language">
+              <label for="check_inp_ch" leng-choice = "CH" class = "header-wrapper__label footer-bottom__label">
+                  CH
+              </label>
+              
+  
+          </form>
+  
+  
+  
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+    <main class="main-content">
+
+
+      <section class = "main-info">
+            
+        <div class ="main-info__h1-wrapper h1-block main-info__h1-wrapper--visible">
+            <img src="img/main/highlight.svg" alt="" class="main-info__dash-picture"></img>
+            <h1 class = "main-info__h1">Услуги и сервисы</h1>
+        </div>
+        
+        <nav class = "main-info__nav main-info__nav--change-height">
+            <ul class = "main-info__list-nav main-info__list-nav--change-main-column">
+                <li class = "main-info__list-item"><a class = "main-info__link" href="">Ремонтируемые бренды</a></li>
+                <li class = "main-info__list-item"><a class = "main-info__link" href="">Ремонтируемые устройства </a></li>
+                <li class = "main-info__list-item"><a class = "main-info__link" href="">Цены на услуги</a></li>
+                <li class = "main-info__list-item"><a class = "main-info__link" href="">Адреса сервисных центров</a></li>
+                <li class = "main-info__list-item"><a class = "main-info__link" href="">Специальные цены</a></li>
+                <li class = "main-info__list-item"><a class = "main-info__link" href="">Отзывы</a></li>
+            </ul>
+        </nav>
+        <article class ="main-info__item">
+            <div class = "main-info__wrapper-info main-info__wrapper-info--change-main-column">
+                <div class = "main-info__left-wrapper-info">
+                    <p class = "main-info__p" id ="text-info">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<br><br>
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+                        количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+                        советуют нас родным и близким.
+                    </p>
+
+                    <button type="button" class = "main-info__button">
+                        <img src= "img/main/icon.svg" alt="Иконка" class = "main-info__img-button">
+                        <span class = "main-info__button-span">Читать далее</span>
+                    </button>
+                    
+       
+                </div>
+                <img src="img/main/Picture_main.jpg" alt="фото таблички" class="main-info__main-picture main-info__main-picture--change-size"></img>
+            </div>
+            
+        </article>
+      </section>
+
+
+
+
+
+
+
+
+      <nav class = "navigation-brends">
+        <h1 class = "navigation-brends__h1">Ремонт техники различных брендов</h1>
+        <div class="swiper-container swiper1 swiper-container1--visible">
+            <div class="swiper-wrapper">
+
+              <template id = "navigation-brends__swiper-menu" > <!-- Шаблон для Swiper меню   -->
+                <div class="swiper-slide">
+                    <a class = "navigation-brends__link" href="#brend">
+                        <img src = "" alt="бренд" class="navigation-brends__img">
+                    </a>
+                </div>
+              </template>
+ 
+            </div>
+            <div class="swiper1-pagination"></div>
+            
+        </div>
+
+        <div class = "navigation-brends__hidden-wrapper navigation-brends__hidden-wrapper--visible">
+            <ul class = "navigation-brends__list-nav navigation-brends__list-nav--margin">
+
+                <template id = "navigation-brends__main-menu" > <!-- Шаблон для обычного меню   -->
+                  <li class = "navigation-brends__list-item navigation-brends__list-item--margin">
+                      <a class = "navigation-brends__link" href="#brend">
+                          <img src = "" alt="бренд" class="navigation-brends__img">
+                      </a>
+                  </li>
+              </template>
+
+            </ul>
+        </div>
+        <button type="button" class = "navigation-brends__button navigation-brends__button--visible">
+            <img src= "img/arrow-open-close.svg" alt="Иконка" class = "navigation-brends__img-button">
+            <p class = "navigation-brends__batton-txt">Показать все</p>
+        </button>
+      </nav>
+
+
+      <nav class = "equipment-repair">
+        <h1 class = "equipment-repair__h1">Ремонт различных видов техники</h1>
+        <div class="swiper-container swiper2 swiper-container2--visible">
+            <div class="swiper-wrapper">
+              
+
+              <template id = "equipment-repair__swiper-menu"> <!-- Шаблон для Swiper меню   -->
+                <div class="swiper-slide">
+                    
+                    <a class = "equipment-repair__link" href="#brend">
+                        <p class = "equipment-repair__description"></p>
+                        <img src = "" alt="бренд" class="equipment-repair__img">
+                        <p class = "equipment-repair__price"></p>
+                    </a>
+                    
+                </div>
+              </template>
+              
+            </div>
+
+            <div class="swiper2-pagination"></div>
+        </div>
+
+        <div class = "equipment-repair__hidden-wrapper equipment-repair__hidden-wrapper--visible">
+            <ul class = "equipment-repair__list-nav equipment-repair__list-nav--margin">
+
+                <template id = "equipment-repair__main-menu" > <!-- Шаблон для обычного второго меню   -->
+                  <li class = "equipment-repair__list-item equipment-repair__list-item--margin">
+                      
+                      <a class = "equipment-repair__link" href="#notebook">
+                          <p class = "equipment-repair__description"></p>
+                          <img src = "" alt="бренд" class="equipment-repair__img">
+                          <p class = "equipment-repair__price"></p>
+                      </a>
+                      
+                      
+                  </li>
+              </template>
+
+            </ul>
+        </div>
+        <button type="button" class = "equipment-repair__button equipment-repair__button--visible">
+            <img src= "img/arrow-open-close.svg" alt="Иконка" class = "equipment-repair__img-button">
+            <p class = "equipment-repair__batton-txt">Показать все</p>
+        </button>
+      </nav>
+
+
+
+
+
+      <nav class = "prices-nav">
+        <h1 class = "prices-nav__h1">Цены на услуги</h1>
+        <div class="swiper-container swiper3 swiper-container3--visible">
+            <div class="swiper-wrapper">
+              
+
+              <template id = "prices-nav__swiper-menu"> <!-- Шаблон для Swiper меню   -->
+                <div class="swiper-slide">
+                    
+                    <a class = "prices-nav__link-repair-services" href="#service">
+                      <h2 class ="prices-nav__h2 prices-nav__h2--margin-top">Ремонтные услуги</h2>
+                    </a>
+                    <p class = "prices-nav__p prices-nav__repair-services-p"></p>
+
+                    <a class = "prices-nav__link-price" href="#price">
+                      <h2 class ="prices-nav__h2">Цена</h2>
+                    </a>
+                    <p class = "prices-nav__p prices-nav__price-p"></p>
+
+                    <a class = "prices-nav__link-term" href="#term">
+                      <h2 class ="prices-nav__h2">Срок</h2>
+                    </a>
+                    <p class = "prices-nav__p prices-nav__term-p"></p>
+                    <button type="button" class = "prices-nav__button-swiper prices-nav__button--visible">
+                      <span class = "prices-nav__button-swiper-span">Заказать</span>
+
+                    </button>
+
+                </div>
+              </template>
+              
+            </div>
+
+            <div class="swiper3-pagination"></div>
+        </div>
+
+
+
+        <div class = "prices-nav__hidden-wrapper prices-nav__hidden-wrapper--visible">
+          
+            <ul class = "prices-nav__list-nav prices-nav__list-nav--margin">
+              <div class="prices-nav-head__wrapper">
+                <div class="price-nav-templ-wrapper price-nav-templ-wrapper--bgcolor">
+                  <li class = "prices-nav__list-item prices-nav__list-item--bgcolor">
+
+                    <p class = "prices-nav__templ-parag">Ремонтные услуги</p>
+                    <p class = "prices-nav__templ-parag">Цена</p>
+                    <p class = "prices-nav__templ-parag">Сроки</p>
+                    <p class = "prices-nav__templ-parag"></p>
+
+                  </li>
+                </div>
+              </div>
+            
+          
+              <div class="price-nav__bottom-wrapper">  
+                <template id = "prices-nav__main-menu" > <!-- Шаблон для обычного второго меню   -->
+                  <!-- <div class="price-nav-templ-wrapper price-nav-templ-wrapper--border"> -->
+                    <li class = "prices-nav__list-item prices-nav__list-item--margin prices-nav__list-item--border">
+                        
+                      <p class = "prices-nav__templ-parag prices-nav__templ-parag-repair">Ремонтные услуги</p>
+                      <p class = "prices-nav__templ-parag prices-nav__templ-parag-price">Цена</p>
+                      <p class = "prices-nav__templ-parag prices-nav__templ-parag-term">Сроки</p>
+                      <div class="prices-nav__button-wrapper">
+                        <button type="button" class = "prices-nav__button prices-nav__button--visible">
+                
+                          <span class="prices-nav__button-span prices-nav__button-span--visible">Заказать</span>
+                        </button>
+                      </div>
+
+                        
+                        
+                    </li>
+                  <!-- </div> -->
+                </template>
+              </div>
+            </ul>
+        </div>
+      
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+      <section class = "commercial-information">
+        <p class = "commercial-information__main-info">
+            Все цены указаны с учетом НДС.
+           Стоимость ремонта указана на единичную услугу.
+            Для получения коммерческого предложения на постоянное обслуживание,
+             оставьте заявку.</p>
+        <a class = "commercial-information__link" href="#commercial-link">Получить коммерческое предложение</a>
+
+
+      </section>
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer class="footer-content">
+      <p class = "footer-content__p">
+        © 2019 CPS
+        Разработано командой Apesong 
+      </p>
+      <p class = "footer-content__p">
+        Политика конфиденциальности
+      </p>
+      <p class = "footer-content__p">
+        Информация, размещенная на данной странице, не является публичной офертой 
+      </p>
+
+
+    </footer>
+    
+
+
+  </body>
+</html>

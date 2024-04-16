@@ -1,0 +1,38 @@
+$bgColorH11: #F8F8F8;
+$txtColor: #1B1C21;
+
+.commercial-information__main-info{
+  color: $txtColor;
+  margin: 0;
+  padding-bottom: 52px;
+  padding-top: 32px;
+}
+
+.commercial-information{
+
+  background-color: $bgColorH11;
+  
+  padding: 0 24px;
+  line-height: 20px;
+}
+
+.commercial-information__link{
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+}
+
+
+.commercial-information__link::after {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-right: 8px solid #FF3E79;
+  border-top: 8px solid #FF3E79;
+  transform: rotate(45deg) scale(0.25);
+  margin-top: -9px;
+  margin-left: -10px;
+  
+  
+}

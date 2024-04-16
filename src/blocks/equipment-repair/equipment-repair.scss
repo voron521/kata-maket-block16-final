@@ -1,0 +1,151 @@
+$bgColorH11: #F8F8F8;
+$bgColorH12: #FFFFFF;
+$borderRadiusCOlor: #EAEAEA;
+
+.equipment-repair {
+    display: flex;
+    align-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: $bgColorH11;
+  }
+  
+.swiper2 .swiper-wrapper {
+  display: flex;
+  margin: 16px;
+  
+}
+
+.swiper2 .swiper-slide {
+  height: 160px;
+  background-color: $bgColorH12;
+}
+
+.swiper2 .equipment-repair__img, .equipment-repair__list-nav .equipment-repair__img{
+  width: 90px;
+  height: auto;
+}
+
+.swiper2 .equipment-repair__link {
+  border: 1px solid $borderRadiusCOlor;
+  border-radius: 5px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  
+}
+
+
+
+
+.equipment-repair__h1{
+  color: #7E7E82;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: linear-gradient(to right, $bgColorH11, $bgColorH12);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  
+
+}
+
+.equipment-repair__button{
+  display: flex;
+  border: none;
+  outline: none;
+  align-self: flex-start;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1B1C21;
+  background: transparent;
+  margin: 0 0 16px 31px;
+  padding: 4px;
+  line-height: 24px;
+}
+
+
+.equipment-repair__img-button{
+  transition: transform 500ms;
+  transform: rotate(0deg);
+  height: 11px;
+  width: 8px;
+  margin-right: 8px; 
+}
+
+.equipment-repair__list-nav{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.equipment-repair__list-item {
+  
+  height: 160px;
+  width: 224px;
+  
+  margin-right: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  
+  
+  
+
+}
+
+
+.equipment-repair__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid $borderRadiusCOlor;
+  width: 100%;
+  background-color: $bgColorH12;
+}
+.equipment-repair__hidden-wrapper{
+  transition: all 500ms;
+  margin-left: 24px;
+  
+  max-height: 190px;
+  overflow: hidden;
+  padding-top: 24px;
+}
+.equipment-repair__img-button--rotate-img{
+  transform: rotate(180deg);
+
+
+}
+.equipment-repair__hidden-wrapper--change-height{
+  max-height: 600px;
+}
+
+.equipment-repair__hidden-wrapper--visible, .equipment-repair__button--visible{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .swiper-container2--visible{
+    display: none;
+  }
+  .equipment-repair__hidden-wrapper--visible, .equipment-repair__button--visible{
+    display: flex;
+  }
+}
+
+
+    
+    
+    
