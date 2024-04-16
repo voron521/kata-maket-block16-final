@@ -232,7 +232,7 @@
 
 .header-wrapper__vertical-link::before {
   position: absolute;
-  background: url(./highlight.svg) no-repeat;
+  background: url(./static/highlight.svg) no-repeat;
   content: '';
   width: 32px;
   height: 116px;
