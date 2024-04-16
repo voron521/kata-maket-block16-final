@@ -183,3 +183,17 @@ $TextColorInput: #B5B6BC;
     width: 100%;
   }
 }
+
+@media (min-width: 320px) {
+  .modal-window__button-close{
+    position: absolute;
+    left: -90px;
+    top: 10px;
+
+  }
+
+  .modal-window__h1-wrapper{
+    margin-top: 40px;
+  }
+
+}
