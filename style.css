@@ -730,7 +730,8 @@
   align-items: center;
   text-align: center;
   padding-bottom: 11px;
-  background: #F8F8F8; }
+  background: #F8F8F8;
+  padding-top: 57px; }
 
 .footer-content .footer-content__p {
   color: #7E7E82;
@@ -741,7 +742,8 @@
     flex-direction: row;
     justify-content: space-around;
     text-align: start;
-    padding: 0 24px; }
+    padding: 0 24px;
+    padding-top: 80px; }
   .footer-content .footer-content__p {
     width: 33%;
     margin: 0; }
