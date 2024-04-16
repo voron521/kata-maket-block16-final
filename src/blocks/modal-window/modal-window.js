@@ -43,9 +43,7 @@ searchButtonCall(messageButton, "Заказать звонок", 0, inputForm);
 
 function searchButtonCall(callButton, txtChange = 0, inputVisible = 0, inputForm) {
 
-  console.log('вот поле куджа вставлять будем', modalWindowH1);
-  console.log('вот текст', txtChange);
-  
+
   callButton.addEventListener('click', function () {
     if (txtChange) {
     
@@ -84,16 +82,11 @@ function searchButtonCall(callButton, txtChange = 0, inputVisible = 0, inputForm
 
       });
 
-       
+      modalWindowCall  = modalWindow.querySelector('.modal-window__call');
 
       modalWindowCall.addEventListener('click', function (event) {
         event.stopPropagation();
-        if (modalWindow.classList.contains('modal-window--visible')) {
-          
-          modalWindowCall.classList.add('modal-window__call--unvisible');
-          setTimeout(removeClassListTimeOut, 1000); 
-        
-        }
+
 
       });
 

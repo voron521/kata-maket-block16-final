@@ -68,9 +68,6 @@ function addBurgerListener(buttonBurger){
       menuWrapper.classList.add('header-burger-menu-wrapper--visible'); //добавляем класс видимости чтобы добавить блок
       parentBlock.classList.add('header-burger-menu--visible');
 
-      
-
-      
 
 
       let callButton = document.querySelector('.header-burger-menu-wrapper .header-wrapper__message-button'); //получили кнопку call
@@ -86,11 +83,6 @@ function addBurgerListener(buttonBurger){
       }
      
 
-      
-      
-
-      
-
       let buttonburgerPopupMenu = document.querySelector('.header-burger-menu .header-wrapper__button-burger')
       let buttonBurgerImg = buttonburgerPopupMenu.querySelector('.left-header__burger-img');
       
@@ -102,14 +94,6 @@ function addBurgerListener(buttonBurger){
           parentBlock.classList.add('header-burger-menu--hidden'); // для анимации скрытия
           setTimeout(removeClassListTimeOut, 1000);
           
-
-          
-          
-          
-          
-          
-         
-
       });
 
 

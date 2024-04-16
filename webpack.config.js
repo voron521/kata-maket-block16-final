@@ -48,7 +48,7 @@ module.exports = {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: [
           {
-            loader: 'file-loader?name=./fonts/[name].[ext]'
+            loader: 'file-loader?name=./fonts/[name].[ext]',
           },
         ]
       },
@@ -68,8 +68,8 @@ module.exports = {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
         use: [
           {
-            /*loader: 'file-loader?name=./static/[name].[ext]',*/
-            loader: 'file-loader?name=/static/[name].[ext]',
+            loader: 'file-loader?name=./static/[name].[ext]',
+            
             
             
           },
